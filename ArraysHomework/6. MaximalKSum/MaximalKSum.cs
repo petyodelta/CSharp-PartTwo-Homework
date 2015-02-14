@@ -23,7 +23,7 @@ class MaximalKSum
 
         //finding K elements that have maximal sum
         int sum = 0;
-        int maxSum = array[0];
+        int maxSum = int.MinValue;
         int start = 0;
 
         for (int i = 0; i < (n - k) + 1; i++)

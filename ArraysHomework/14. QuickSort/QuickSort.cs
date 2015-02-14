@@ -11,7 +11,9 @@ class QuickSort
         //input
         Console.Write("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
+
         int[] array = new int[n];
+
         Console.WriteLine("Enter array elements:");
         for (int i = 0; i < array.Length; i++)
         {

@@ -7,17 +7,19 @@ class MaximalSequence
 {
     static void Main()
     {
+        //input
         Console.Write("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
-        Console.Write("Enter array numbers(0,1,2,3...):");
+        Console.Write("Enter array {0} numbers split by \",\":", n);
         string[] arrayString = Console.ReadLine().Split(',');
-        int[] array = new int[arrayString.Length];
+        int[] array = new int[n];
 
         for (int i = 0; i < array.Length; i++)
         {
             array[i] = int.Parse(arrayString[i]);
         }
-        ;
+        
+        //find max sequence 
         int lenght = 1;
         int longestStart = 0;
         int longestLenght = 1;
@@ -35,10 +37,11 @@ class MaximalSequence
             }
             else
             {
-                
                 lenght = 1;
             }
         }
+
+        //output
         for (int i = longestStart; i < longestStart + longestLenght; i++)
         {
             if (i == (longestStart + longestLenght - 1))

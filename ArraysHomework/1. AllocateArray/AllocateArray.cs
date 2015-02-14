@@ -7,13 +7,16 @@ class AllocateArray
 {
     static void Main()
     {
+        //input
         int[] arrayNumbers = new int[20];
 
         for (int i = 0; i <arrayNumbers.Length; i++)
         {
+            Console.Write("array[{0}]=",i);
             arrayNumbers[i] = int.Parse(Console.ReadLine());
         }
 
+        //output
         for (int i = 0; i < arrayNumbers.Length; i++)
         {
             arrayNumbers[i] = arrayNumbers[i] * 5;

@@ -8,9 +8,9 @@ class BinarySearch
     static void Main()
     {
         //input
-
         Console.Write("Enter array lenght: ");
         int n = int.Parse(Console.ReadLine());
+
         int[] array = new int[n];
         Console.WriteLine("Enter array of {0} integer numbers:", n);
 

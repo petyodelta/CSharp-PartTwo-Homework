@@ -9,6 +9,7 @@ class SequenceNMatrix
 {
     static void Main()
     {
+        //input
         Console.Write("Enter size N=");
         int n = int.Parse(Console.ReadLine());
         Console.Write("Enter size M=");
@@ -25,6 +26,7 @@ class SequenceNMatrix
             }            
         }
 
+        //finding longest sequence
         int maxSequence = 0;
         int currentSequence = 0;
         string maxString = "";
@@ -63,7 +65,7 @@ class SequenceNMatrix
 
                 currentSequence = 0;
                 for (int currRow = row, currCol = col;(currRow < matrix.GetLength(0) - 1) && (currCol < matrix.GetLength(1) - 1);
-                     currRow++, currCol++)
+                     currRow++, currCol++)//diagonal
                 {
                     if (matrix[currRow + 1,currCol + 1] == matrix[currRow,currCol])
                     {
@@ -78,10 +80,19 @@ class SequenceNMatrix
             }
         }
 
+        //output
         for (int i = 0; i < maxSequence + 1; i++)
         {
-            Console.Write(maxString + " ");
+            if (i == maxSequence)
+            {
+                Console.Write(maxString);
+            }
+            else
+            {
+                Console.Write(maxString + ", ");
+            }
         }
+        Console.WriteLine();
     }
 }
 

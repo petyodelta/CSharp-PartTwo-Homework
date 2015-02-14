@@ -18,6 +18,7 @@ class MergeSort
         }
 
         Mergesort(array);
+        
         //output
         for (int i = 0; i < array.Length; i++)
         {
@@ -28,13 +29,13 @@ class MergeSort
 
     static void Merge(int[] arrayLeft, int[] arrayRight, int[] array)
     {
-        int nL = arrayLeft.Length;
-        int nR = arrayRight.Length;
+        int lenghtLeft = arrayLeft.Length;
+        int lenghtRight = arrayRight.Length;
         int i = 0;//index Left
         int j = 0;//index Right
         int k = 0;//index array
 
-        while (i < nL && j < nR)
+        while (i < lenghtLeft && j < lenghtRight)
         {
             if (arrayLeft[i] <= arrayRight[j])
             {
@@ -49,14 +50,14 @@ class MergeSort
             ++k;
         }
 
-        while (i < nL)
+        while (i < lenghtLeft)//if only left has elements after merge
         {
             array[k] = arrayLeft[i];
             ++i;
             ++k;
         }
 
-        while (j < nR)
+        while (j < lenghtRight)//if only right has elements after merge
         {
             array[k] = arrayRight[j];
             ++j;
@@ -67,7 +68,7 @@ class MergeSort
     static void Mergesort(int[] array)
     {
         int n = array.Length;
-        if (n < 2)//if arrayLeft or arrayRight is with one element 
+        if (n < 2)
         {
             return;
         }

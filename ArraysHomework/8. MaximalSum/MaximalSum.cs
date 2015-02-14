@@ -10,8 +10,10 @@ class MaximalSum
         //input
         Console.Write("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
-        Console.Write("Enter array numbers(0,1,2,3...):");
+
+        Console.Write("Enter array {0} numbers split by \",\":", n);
         string[] arrayString = Console.ReadLine().Split(',');
+        
         int[] array = new int[arrayString.Length];
         
         for (int i = 0; i < array.Length; i++)

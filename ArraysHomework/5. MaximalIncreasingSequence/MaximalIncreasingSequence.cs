@@ -7,9 +7,10 @@ class MaximalIncreasingSequence
 {
     static void Main()
     {
+        //input
         Console.Write("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
-        Console.Write("Enter array numbers(0,1,2,3...):");
+        Console.Write("Enter array {0} numbers split by \",\":",n);
         string[] arrayString = Console.ReadLine().Split(',');
         int[] array = new int[arrayString.Length];
 
@@ -18,7 +19,7 @@ class MaximalIncreasingSequence
             array[i] = int.Parse(arrayString[i]);
         }
 
-        //int startIndex = 0;
+        //find max increasing sequence
         int lenght = 1;
         int longestStart = 0;
         int longestLenght = 1;
@@ -37,10 +38,10 @@ class MaximalIncreasingSequence
             else
             {
                 lenght = 1;
-                //startIndex = i;
             }
         }
 
+        //output
         for (int i = longestStart; i < longestStart + longestLenght; i++)
         {
             if (i == (longestStart + longestLenght - 1))
