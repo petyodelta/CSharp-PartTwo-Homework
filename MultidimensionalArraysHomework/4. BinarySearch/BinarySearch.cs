@@ -11,25 +11,34 @@ class BinarySearch
         //input
         Console.Write("Enter array lenght:");
         int n = int.Parse(Console.ReadLine());
+
         int[] array = new int[n];
         for (int i = 0; i < array.Length; i++)
         {
             Console.Write("array[{0}]=", i);
             array[i] = int.Parse(Console.ReadLine());
         }
+
         Console.Write("Enter number K=");
         int k = int.Parse(Console.ReadLine());
         int target = k;
 
         //sort and find largest number  <= K
         Array.Sort(array);
-
-        while (Array.BinarySearch(array, target) < 0)
-        {
-            --target;    
-        }
-
+        
         //output
+        if (array[0] > k)
+        {
+            Console.WriteLine("No such number.");
+            return;
+        }
+        else
+        {
+            while (Array.BinarySearch(array, target) < 0)
+            {
+                --target;
+            }
+        }
         Console.WriteLine("The largest number in the array which is less or equal to {0} is {1} ",k ,target);
     }    
 }

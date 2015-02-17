@@ -41,7 +41,7 @@ class FillTheMatrixB
         {
             for (int col = 0; col < matrix.GetLength(1); col++)
             {
-                Console.Write("{0:D2} ", matrix[row, col]);
+                Console.Write("{0,3} ", matrix[row, col]);
             }
             Console.WriteLine();
         }

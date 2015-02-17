@@ -11,8 +11,18 @@ class MaximalSum
         //input
         Console.Write("Enter N=");
         int n = int.Parse(Console.ReadLine());
+        while (n < 3)
+        {
+            Console.Write("Invalid number (N>=3). Enter N=");
+            n = int.Parse(Console.ReadLine());
+        }
         Console.Write("Enter M=");
         int m = int.Parse(Console.ReadLine());
+        while (m < 3)
+        {
+            Console.Write("Invalid number (M>=3). Enter M=");
+            m = int.Parse(Console.ReadLine());
+        }
 
         int[,] matrix = new int[n, m];
         for (int i = 0; i < matrix.GetLength(0); i++)

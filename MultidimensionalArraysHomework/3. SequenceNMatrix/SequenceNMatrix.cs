@@ -64,8 +64,7 @@ class SequenceNMatrix
                 }
 
                 currentSequence = 0;
-                for (int currRow = row, currCol = col;(currRow < matrix.GetLength(0) - 1) && (currCol < matrix.GetLength(1) - 1);
-                     currRow++, currCol++)//diagonal
+                for (int currRow = row, currCol = col;(currRow < matrix.GetLength(0) - 1) && (currCol < matrix.GetLength(1) - 1); currRow++, currCol++)//diagonal
                 {
                     if (matrix[currRow + 1,currCol + 1] == matrix[currRow,currCol])
                     {
