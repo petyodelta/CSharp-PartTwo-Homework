@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5. HexadecimalToBinary", "5
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8. BinaryShort", "8. BinaryShort\8. BinaryShort.csproj", "{5642D18E-ECF4-4008-9055-F8D9CA391AB9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7. OneSystemToAnyOther", "7. OneSystemToAnyOther\7. OneSystemToAnyOther.csproj", "{C5B1195D-C8C7-4F3C-A4ED-F54CE3C80DFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{5642D18E-ECF4-4008-9055-F8D9CA391AB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5642D18E-ECF4-4008-9055-F8D9CA391AB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5642D18E-ECF4-4008-9055-F8D9CA391AB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B1195D-C8C7-4F3C-A4ED-F54CE3C80DFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B1195D-C8C7-4F3C-A4ED-F54CE3C80DFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B1195D-C8C7-4F3C-A4ED-F54CE3C80DFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B1195D-C8C7-4F3C-A4ED-F54CE3C80DFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
