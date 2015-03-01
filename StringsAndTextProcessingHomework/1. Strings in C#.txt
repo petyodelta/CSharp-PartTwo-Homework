@@ -1,0 +1,8 @@
+Strings are sequences of characters.Each character is 
+a Unicode symbol. Represented by the string data type 
+in C# (System.String).String objects contain 
+an immutable (read-only) sequence of characters. 
+Strings use Unicode to support multiple languages 
+and alphabets. Strings are stored in the dynamic 
+memory (managed heap) . System.String is reference type.
+
